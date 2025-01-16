@@ -4,9 +4,14 @@
 
 This repository provides a script set up that interfaces with the CubeCoders AMP server manager to automatically update your Factorio game. This integration allows for seamless updates of your game without manual intervention, ensuring you always have the latest version running on your server.
 
-## Features
+## What this solves
 
-* Automatic Factorio updates triggered via AMP server manager
+Today, running Factorio within AMP on a linux system does not use SteamCMD to download the headless server.
+
+As a result, there is no way to "automatically trigger" a headless update without external tooling. This repository provides a solution that allows for automatic updates of Factorio while still utilizing AMP's builtin update mechanism.
+
+Additionally, if AMP updates their scheduler to handle this edge case, it should be a drop-in replacement/deprecation of this script.
+
 
 ## Setup and Usage
 
