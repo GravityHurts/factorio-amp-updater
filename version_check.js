@@ -71,7 +71,7 @@ function runScript(scriptPath) {
         } else {
             console.log('The local version does not match the latest version.');
             const updateScriptPath = path.join(__dirname, env.SCRIPT_NAME); 
-            //runScript(updateScriptPath);
+            runScript(updateScriptPath);
         }
     } catch (error) {
         console.error(`Error: ${error.message}`);
