@@ -15,7 +15,7 @@ async function login(url, user, pass, token="") {
         if (loginResult.success) {
             console.log("Login successful");
             API.sessionId = loginResult.sessionID;
-            console.log(loginResult)
+            //console.log(loginResult)
 
             //Perform second-stage API initialization, we only get the full API data once we're logged in.
             APIInitOK = await API.initAsync();
@@ -57,7 +57,7 @@ async function start() {
         var targetTrigger = triggers.PopulatedTriggers.find((a) => a.Description === env.EVENT_DESCRIPTION);
         if (targetTrigger) {
             var tresp = await Instance.Core.RunEventTriggerImmediatelyAsync(targetTrigger.Id, Instance.sessionId);
-            console.log(tresp);
+            //console.log(tresp);
         }
 
         console.log("Trigger sent!");
